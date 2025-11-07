@@ -7,6 +7,7 @@ target/
 dbt_packages/
 logs/
 .env
+profiles.yml
 
 .DS_Store
 

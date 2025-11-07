@@ -14,7 +14,9 @@
       in {
         default = pkgs.mkShell {
           packages = with pkgs; [
-            duckdb
+            postgresql_17
+            dbt
+            (dbt.withAdapters (adapters: [ adapters.dbt-postgres ]))
             git
             uv
           ];
