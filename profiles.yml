@@ -1,0 +1,8 @@
+jaffle_shop:
+  target: dev
+  outputs:
+    dev:
+      type: duckdb
+      path: ./jaffle.duckdb   # creates/uses a local DuckDB file
+      # optional:
+      # extensions: [httpfs, parquet]
